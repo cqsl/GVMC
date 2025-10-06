@@ -39,16 +39,16 @@ def update_params(J,B,params,opt_vars,params_unravel,nvwf):
   lr,it,lam0,mu,params_arr_grad0 = opt_vars['lr'],opt_vars['it'],opt_vars['lam0'],opt_vars['mu'],opt_vars['params_arr_grad0']
   #lr_it = lr*( 1 / (100+it) )
   lr_it,lam0_it,mu_it = lr,lam0,mu
-  G_diag = opt_vars['diag_norm'] 
+  G_diag = opt_vars['diag_norm'] #not used should be deleted
   
   
   params_arr_grad = minSR_solve_Kacz(J, B , params_arr_grad0 ,lam0=lam0_it,lam1=1.,mu=mu_it)
 
   dtheta_max = .05
   dtheta = (lr_it / math.sqrt(nvwf)) * jnp.linalg.norm(jnp.dot(J,params_arr_grad))
-  rth = (dtheta_max/dtheta)
+  rth = (dtheta_max/dtheta) #also not used but should be used to prevent large grads
  
-  params_arr_grad0 = params_arr_grad
+  params_arr_grad0 = params_arr_grad 
   
   '''
   if shared_weights:
