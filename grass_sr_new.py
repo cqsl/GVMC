@@ -70,7 +70,8 @@ def update_params(J,B,params,opt_vars,params_unravel,nvwf):
 
 
 
-
+#Jannes pointed out this can  be obtaind by simpling calculating the jacobian of the log(det(Phi)) which is probablly more stable.
+# This calculates the jacobian by taking grad of log(Phi) matrices with Phi^-1 * Phi (elem wise) as the V in vjp
 @partial(jax.jit,static_argnames=("vec_apply_fun","chunk_size","center_and_scale"))
 def vwf_vec_jacobian(
     vec_apply_fun: Callable,
