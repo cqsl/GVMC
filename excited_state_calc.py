@@ -37,8 +37,7 @@ from netket.jax import vmap_chunked
 import grass_sr_new as gsr
 #from grass_vwf import Grass_VWF_Vec,overlap_mat,det_and_inv_row_update_batch,row_norm_func,Grass_VWF_Vec_BF
 import grass_vwf_new as gvwf
-from grass_samp import MetropolisSampler_Wedge_Det,MetropolisExchange_Wedge_Det
-from gs_calc import gs_calc_iter,gs_calc_update
+
 import math
 
 
