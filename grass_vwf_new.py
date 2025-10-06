@@ -196,7 +196,7 @@ def operator_overlap_mat(mod_apply_fn,params,state,sigma,row_log_norm,Jax_Op,chu
 
 
 
-# Calculates the individual vwf log norms based on sampled states so that Expected_sigma[ phi_i(sigma)] = 1
+# Calculates the individual vwf log norms based on sampled states so that Expected_sigma[ |phi_i(sigma)| ] = 1
 #log_Phi_sigma: array of log vwf coefficents log_Phi_sigma...ij = 
 def renorm_Phi(log_Phi_sigma,vec_state):
 
@@ -224,7 +224,7 @@ def renorm_Phi(log_Phi_sigma,vec_state):
 
 
 
-
+#used by sampler for quick matrix inverse and det calcs for rank 1 updates
 def det_and_inv_row_update(A0_inv,A_row_k,k):
   v= A_row_k @ A0_inv
   det_ratio = v.at[k].get()
