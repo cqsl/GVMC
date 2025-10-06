@@ -48,7 +48,6 @@ from jax.flatten_util import ravel_pytree
 from flax.core import FrozenDict
 from netket import nn as nknn
 
-from vwf_custom import RBM_custom,RBM_custom2,RBMModPhase_custom
 from netket.jax import vmap_chunked
 
 import math
