@@ -50,7 +50,6 @@ import math
 def excited_update_step(mod_apply_fn_vec,params_unravel,sigma,ham,chunk_sizes, vec_params,vec_state,opt_vars,grass_vars,mode='complex'):
 
   chunk_size_energy,chunk_size_derv  = chunk_sizes
-  #nsamp,nvwf,nparam = arr_dim
   nsamp,nvwf = sigma.shape[0],sigma.shape[1] 
 
 
