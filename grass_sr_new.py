@@ -33,7 +33,7 @@ def vmap_ravel_pytree(pytree_vec):
 
 
 
-#@partial(jax.jit,static_argnames=['params_unravel','nvwf','shared_weights'])
+#@partial(jax.jit,static_argnames=['params_unravel','nvwf'])
 def update_params(J,B,params,opt_vars,params_unravel,nvwf):
 
   lr,it,lam0,mu,params_arr_grad0 = opt_vars['lr'],opt_vars['it'],opt_vars['lam0'],opt_vars['mu'],opt_vars['params_arr_grad0']
