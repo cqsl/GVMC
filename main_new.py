@@ -49,30 +49,13 @@ from tqdm import tqdm
 from jax import config
 from itertools import chain
 
-#dont need this anymore after latest netket update got rid of @deprecate_dtypeRBMModPhase_Mom_Proj3,
-#from vwf_custom import RBM_custom,RBMModPhase_Trans_Inv,RBMModPhase_custom,RBMModPhase_Mom_Proj,Spin_Mom_Proj,RBMModPhase_Mom_Proj2
-#from vwf_custom import RBMModPhase_Mom_Proj3,RBMModPhase_Trans_Inv2,RBMModPhase_Mom_Proj4,RBMModPhase_Trans_Inv3,Test_BF
-#from vwf_rbm_custom import RBMModPhase_Mom_Proj_Group_TranSF,freq_mask_hash, RBMModPhase_Mom_Proj_Group_TranSF2
 
-
-#from ResNet_custom import ResNet,ResNetBlock_1D,ResNetBlock_2D
-#from convnext_custom import ConvNeXt
-#from convnext_custom2 import ConvNeXt2
-#import grass_sr as gsr
-#from grass_vwf import Grass_VWF_Vec,overlap_mat,det_and_inv_row_update_batch,row_norm_func,Grass_VWF_Vec_BF
 
 
 from grass_samp_new import MetropolisSampler_Wedge,MetropolisExchange_Wedge
 from grass_samp_rule_new import SymmetryProposal_2D_Square_SpinHalf
-
-
-#from gs_calc import gs_calc_iter,gs_calc_update
-
-#from grass_calc import excited_update_step,excited_final_avg_step_spin_struct_batch_avg
 from excited_state_calc import excited_update_step
-
 from ham_jax_construct import Ham_Heisenberg_J1_pcl,Ham_Heisenberg_J1_J2_pcl
-
 #from symm_test import symm_test,symm_test_2D_sf
 from convnext_rbm_symm_create import create_model
 
