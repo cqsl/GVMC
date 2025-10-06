@@ -167,7 +167,7 @@ def overlap_mat(mat_log_elem ):
 
 
 
-#Calculates row normalized Operator overlap matrices Op_Phi_ij = e^(-c_i)*<sigma_i | O | phi_j > 
+#Calculates row normalized Operator overlap matrices Op_Phi_...ij = e^(-c_i)*<sigma_i | O | phi_j > 
 #mod_apply_fn,params,state: apply function, params, and state of Grass_VWF_Module
 #sigma: input state array in standard Netket but n_chains and n_samps_per_chain combined as n_samp
 #row_log_norm: the log row norms given by "overlap_mat" for inputs sigma
