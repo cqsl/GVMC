@@ -48,7 +48,8 @@ from vwf_rbm_custom import RBMModPhase_Mom_Proj_Group_TranSF,freq_mask_hash, RBM
 
 #from convnext_custom import ConvNeXt
 from convnext_custom2 import ConvNeXt2
-from grass_vwf import Grass_VWF_Vec,overlap_mat,det_and_inv_row_update_batch,row_norm_func,Grass_VWF_Vec_BF
+#from grass_vwf import Grass_VWF_Vec,overlap_mat,det_and_inv_row_update_batch,row_norm_func,Grass_VWF_Vec_BF
+from grass_vwf_new import Grass_VWF_Vec,Grass_VWF_Vec_BF
 
 
 
